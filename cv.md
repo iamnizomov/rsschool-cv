@@ -9,3 +9,20 @@
 * __E-mail__: [Mukhammadali Nizomov](mailto:mukhammadali.nizomov@gmail.com)<br />
 * __Linkedin__: [Mukhammadali Nizomov](https://www.linkedin.com/in/mukhammad-ali-nizomov-523aa0232)<br />
 * __GitHub__: [iamnizomov](https://github.com/iamnizomov)<br />
+
+### Skills
+- Core
+    * HTML
+    * CSS
+    * JavaScript (Fundamentals, OOP Basics, ES6, DOM)
+- Module Bundlers:
+    * Webpack
+    * Gulp
+- OC Experience:
+    * MacOS
+    * Windows
+- UX / UI Skills:
+    * Adobe Photoshop \ Illustrator
+    * Figma
+- Editors:
+    * VS Code
