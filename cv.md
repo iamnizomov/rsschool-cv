@@ -26,3 +26,20 @@
     * Figma
 - Editors:
     * VS Code
+
+### Education
+- Proweb School
+    * Basic knowledge of frontend development, such as: HTML/CSS/Less/Sass/Gulp/JS/JQuery/PHP/WordPress
+- Albison
+    * Knowledge of React and Core JS
+- Astrum Academia
+    * Basic knowledge of C and Python
+
+### Langauges:
+- English (C1)
+- Uzbek (Fluent)
+- Russian (Native Speaker)
+
+### Experience:
+- Albison (Frontend Developer, Intern)
+- CREDO (Frontend Developer, Intern)
