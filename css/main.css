@@ -27,3 +27,63 @@ header ul li:hover {
 header ul li:hover a {
     color: var(--main);
 }
+
+/* OCCUPATION SECTION */
+section#occupation .occupation-avatar {
+    position: relative;
+    z-index: 1;
+    height: 280px;
+    width: 280px;
+    margin-bottom: 1rem;
+}
+
+section#occupation .occupation-avatar::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-135px, -145px);
+    z-index: -1;
+
+    display: block;
+    height: 280px;
+    width: 280px;
+
+    background: var(--main);
+    border-radius: 50%;
+
+    content: "";
+}
+
+section#occupation img {
+    transform: translate(-5px, 5px);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+section#occupation h1 {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    text-align: center;
+    font-size: 4rem;
+}
+
+section#occupation h1::before {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    display: block;
+    height: 1rem;
+    width: 100%;
+
+    background: var(--main);
+
+    content: "";
+}
