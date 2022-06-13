@@ -101,3 +101,31 @@ ul li {
 a {
     text-decoration: none;
 }
+
+section {
+    padding: 6rem 5rem;
+    scroll-margin-top: 103.2px;
+}
+
+section:nth-child(even) {
+    background: var(--dark);
+}
+
+section:nth-child(odd) {
+    background: #000;
+}
+
+section h2::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 4rem;
+    height: 4px;
+    margin-bottom: 2rem;
+
+    background: var(--main);
+
+    content: ""
+}
