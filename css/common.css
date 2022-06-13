@@ -129,3 +129,34 @@ section h2::before {
 
     content: ""
 }
+
+code {
+    font-family: Monospace !important;
+}
+
+code span {
+    font-family: Monospace !important;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.comment {
+    color: var(--code-comment);
+}
+
+.pink {
+    color: var(--code-pink);
+}
+
+.green {
+    color: var(--code-green);
+}
+
+.yellow {
+    color: var(--code-yellow);
+}
+
+footer {
+    background: #000;
+}
