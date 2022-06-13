@@ -1,0 +1,11 @@
+/* Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* OTR Font */
+@font-face {
+    font-family: 'OTR';
+    src: url('../src/fonts/otr/otrtypegx-webfont.woff2') format('woff2'),
+        url('../src/fonts/otr/otrtypegx-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
