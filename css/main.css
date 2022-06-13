@@ -1,0 +1,387 @@
+/* HEADER SECTION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: #000;
+}
+
+header a.logo {
+    font-family: "OTR", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header ul li {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-bottom: 4px solid transparent;
+    transition: all 250ms;
+}
+
+header ul li:hover {
+    border-bottom: 4px solid var(--main);
+}
+
+header ul li:hover a {
+    color: var(--main);
+}
+
+/* OCCUPATION SECTION */
+section#occupation .occupation-avatar {
+    position: relative;
+    z-index: 1;
+    height: 280px;
+    width: 280px;
+    margin-bottom: 1rem;
+}
+
+section#occupation .occupation-avatar::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-135px, -145px);
+    z-index: -1;
+
+    display: block;
+    height: 280px;
+    width: 280px;
+
+    background: var(--main);
+    border-radius: 50%;
+
+    content: "";
+}
+
+section#occupation img {
+    transform: translate(-5px, 5px);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+section#occupation h1 {
+    position: relative;
+    z-index: 1;
+
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    text-align: center;
+    font-size: 4rem;
+}
+
+section#occupation h1::before {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    display: block;
+    height: 1rem;
+    width: 100%;
+
+    background: var(--main);
+
+    content: "";
+}
+
+/* ABOUT SECTION */
+section#about h2 {
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+
+section#about h2::before {
+    left: 0;
+}
+
+section#about p {
+    line-height: 2;
+    font-size: 16px;
+}
+
+section#about p span {
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--main);
+}
+
+section#about ul {
+    padding-left: 2rem;
+}
+
+section#about ul li {
+    line-height: 2;
+    list-style: circle;
+}
+
+section#about ul li a {
+    color: var(--main);
+}
+
+/* SKILLS SECTION */
+section#skills h2 {
+    align-self: flex-end;
+    padding-right: 5rem;
+}
+
+section#skills h2::before {
+    right: 0;
+}
+
+section#skills .skills-container-outer {
+    width: 45%;
+}
+
+section#skills .skills-container-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+section#skills h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+section#skills .skills-container-inner h4 {
+    margin-bottom: 4rem;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+section#skills .skills-container-inner h4 span {
+    position: absolute;
+    right: 0;
+}
+
+section#skills .skills-container-inner h4::before {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    right: 0;
+
+    display: block;
+    width: 100%;
+    height: 1rem;
+
+    border-radius: 10px;
+    background: var(--dark);
+    content: "";
+}
+
+section#skills .skills-container-inner h4::after {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    right: 0;
+
+    display: block;
+    height: 1rem;
+
+    border-radius: 10px;
+    background: var(--main);
+    content: "";
+}
+
+section#skills .skills-container-inner .skill-html-css::after {
+    width: 100%
+}
+
+section#skills .skills-container-inner .skill-js-jquery::after {
+    width: 40%
+}
+
+section#skills .skills-container-inner .skill-webpack-gulp::after {
+    width: 60%;
+}
+
+section#skills .skills-container-inner .skill-reactjs::after {
+    width: 40%;
+}
+
+section#skills .skills-container-inner .skill-communication::after {
+    width: 100%
+}
+
+section#skills .skills-container-inner .skill-stress-endurance::after {
+    width: 80%
+}
+
+section#skills .skills-container-inner .skill-time-management::after {
+    width: 80%;
+}
+
+section#skills .skills-container-inner .skill-problem-solving::after {
+    width: 80%;
+}
+
+/* CODE SECTION */
+section#code h2 {
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+
+section#code h2::before {
+    left: 0;
+}
+
+section#code .container-inner {
+    background: #000;
+    border-radius: 2rem 2rem 2rem 0;
+    padding: 2rem 3rem;
+}
+
+/* PORTFOLIO SECTION */
+section#portfolio h2 {
+    align-self: flex-end;
+    padding-right: 5rem;
+}
+
+section#portfolio h2::before {
+    right: 0;
+}
+
+section#portfolio .container-inner .portfolio-item {
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 280px;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-image {
+    height: 180px;
+    width: 100%;
+    position: relative;
+    border-radius: 0 0 2rem 2rem;
+    overflow: hidden;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: auto;
+    height: 100%;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-description {
+    padding: 1rem;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-description h3 {
+    margin-bottom: 1rem;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-description p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-description a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+section#portfolio .container-inner .portfolio-item .portfolio-item-description a:hover {
+    border-color: var(--main);
+    background-color: var(--main);
+}
+
+/* EDUCATION SECTION */
+section#education h2 {
+    padding-left: 5rem;
+}
+
+section#education h2::before {
+    left: 0;
+}
+
+section#education .container-inner .education-item {
+    grid-template-columns: 1fr 20% 1fr;
+    grid-template-areas: ". middle education";
+    text-align: left;
+}
+
+section#education .container-inner .education-item.reversed {
+    grid-template-areas: "education middle .";
+    text-align: right;
+}
+
+section#education .container-inner .education-item .education-description {
+    grid-area: education;
+}
+
+section#education .container-inner .education-item .education-description h3 {
+    margin-bottom: 1rem;
+}
+
+section#education .container-inner .education-item .education-description p {
+    line-height: 1.4;
+}
+
+section#education .container-inner .education-item .line-box {
+    position: relative;
+    height: 8rem;
+    width: 100%;
+    grid-area: middle;
+}
+
+section#education .container-inner .education-item .line-box span.circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 2rem;
+    height: 2rem;
+    display: block;
+
+    background: var(--main);
+    border-radius: 50%;
+}
+
+section#education .container-inner .education-item .line-box span.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 4px;
+    height: 100%;
+    display: block;
+
+    background: var(--main);
+}
+
+section#education .container-education-inner .education-item:last-child .line-box span.line {
+    height: 40%;
+}
+
+/* FOOTER */
+footer .github-account a {
+    display: flex;
+    align-items: center;
+    color: var(--main);
+}
+
+footer .copyright p {
+    color: var(--main);
+}
+
+footer .github-account a svg {
+    margin-right: 0.5rem;
+}
+
+footer .school-link a img {
+    width: 5rem;
+    height: auto;
+}
