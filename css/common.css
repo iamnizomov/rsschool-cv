@@ -9,3 +9,13 @@
     font-weight: 400;
     font-style: normal;
 }
+
+/* Variables */
+:root {
+    --main: #68F8F8;
+    --dark: #101410;
+    --code-pink: #b45ea4;
+    --code-green: #78bb65;
+    --code-yellow: #e7ce56;
+    --code-comment: rgba(255, 255, 255, 0.4);
+}
