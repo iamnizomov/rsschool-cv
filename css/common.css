@@ -19,3 +19,12 @@
     --code-yellow: #e7ce56;
     --code-comment: rgba(255, 255, 255, 0.4);
 }
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
