@@ -1,0 +1,29 @@
+/* HEADER SECTION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: #000;
+}
+
+header a.logo {
+    font-family: "OTR", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header ul li {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-bottom: 4px solid transparent;
+    transition: all 250ms;
+}
+
+header ul li:hover {
+    border-bottom: 4px solid var(--main);
+}
+
+header ul li:hover a {
+    color: var(--main);
+}
