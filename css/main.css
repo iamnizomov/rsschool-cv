@@ -295,3 +295,93 @@ section#portfolio .container-inner .portfolio-item .portfolio-item-description a
     border-color: var(--main);
     background-color: var(--main);
 }
+
+/* EDUCATION SECTION */
+section#education h2 {
+    padding-left: 5rem;
+}
+
+section#education h2::before {
+    left: 0;
+}
+
+section#education .container-inner .education-item {
+    grid-template-columns: 1fr 20% 1fr;
+    grid-template-areas: ". middle education";
+    text-align: left;
+}
+
+section#education .container-inner .education-item.reversed {
+    grid-template-areas: "education middle .";
+    text-align: right;
+}
+
+section#education .container-inner .education-item .education-description {
+    grid-area: education;
+}
+
+section#education .container-inner .education-item .education-description h3 {
+    margin-bottom: 1rem;
+}
+
+section#education .container-inner .education-item .education-description p {
+    line-height: 1.4;
+}
+
+section#education .container-inner .education-item .line-box {
+    position: relative;
+    height: 8rem;
+    width: 100%;
+    grid-area: middle;
+}
+
+section#education .container-inner .education-item .line-box span.circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 2rem;
+    height: 2rem;
+    display: block;
+
+    background: var(--main);
+    border-radius: 50%;
+}
+
+section#education .container-inner .education-item .line-box span.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 4px;
+    height: 100%;
+    display: block;
+
+    background: var(--main);
+}
+
+section#education .container-education-inner .education-item:last-child .line-box span.line {
+    height: 40%;
+}
+
+/* FOOTER */
+footer .github-account a {
+    display: flex;
+    align-items: center;
+    color: var(--main);
+}
+
+footer .copyright p {
+    color: var(--main);
+}
+
+footer .github-account a svg {
+    margin-right: 0.5rem;
+}
+
+footer .school-link a img {
+    width: 5rem;
+    height: auto;
+}
