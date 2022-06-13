@@ -87,3 +87,37 @@ section#occupation h1::before {
 
     content: "";
 }
+
+/* ABOUT SECTION */
+section#about h2 {
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+
+section#about h2::before {
+    left: 0;
+}
+
+section#about p {
+    line-height: 2;
+    font-size: 16px;
+}
+
+section#about p span {
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--main);
+}
+
+section#about ul {
+    padding-left: 2rem;
+}
+
+section#about ul li {
+    line-height: 2;
+    list-style: circle;
+}
+
+section#about ul li a {
+    color: var(--main);
+}
