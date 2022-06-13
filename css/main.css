@@ -220,3 +220,19 @@ section#skills .skills-container-inner .skill-time-management::after {
 section#skills .skills-container-inner .skill-problem-solving::after {
     width: 80%;
 }
+
+/* CODE SECTION */
+section#code h2 {
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+
+section#code h2::before {
+    left: 0;
+}
+
+section#code .container-inner {
+    background: #000;
+    border-radius: 2rem 2rem 2rem 0;
+    padding: 2rem 3rem;
+}
