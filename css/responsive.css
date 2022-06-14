@@ -1,0 +1,115 @@
+/* COMMON HEADER RESPONSIVE */
+@media screen and (min-width: 992px) {
+
+    header,
+    footer {
+        padding: 2rem 5rem;
+    }
+
+    section {
+        padding: 6rem 5rem;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+
+    /* HEADER RESPONSIVE */
+    header nav {
+        position: fixed;
+        top: 102.4px;
+        left: 0;
+        right: 0;
+        display: none;
+        background: #000;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding-left: 2rem;
+    }
+
+    header .menu-bar {
+        display: block;
+    }
+
+    /* SECTIONS RESPOSNIVE */
+    section h2 {
+        align-self: center !important;
+        padding: 0 !important;
+    }
+
+    section h2::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* COMMON STYLES */
+    header,
+    footer {
+        padding: 2rem 0.5rem;
+    }
+
+    section {
+        padding: 2rem 0.5rem;
+    }
+
+    /* OCCUPATION SECTION */
+    section#occupation h1 {
+        font-size: 3rem;
+    }
+
+    /* SKILLS SECTION */
+    section#skills h2+div {
+        flex-direction: column !important;
+    }
+
+    section#skills .skills-container-outer {
+        width: 100%;
+    }
+
+    /* SECTION PORTFOLIO */
+    section#portfolio div div {
+        align-items: center;
+    }
+
+    section#portfolio .portfolio-item {
+        align-items: center;
+    }
+
+    section#portfolio .portfolio-item-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    /* SECTION EDUCATION */
+    section#education .container-inner {
+        gap: 3rem;
+    }
+
+    section#education .container-inner .education-item {
+        grid-template-areas: "middle education" !important;
+        grid-template-columns: 20% 1fr;
+        text-align: left !important;
+    }
+
+    section#education .container-inner .education-item .line-box {
+        height: 100%;
+    }
+
+    /* FOOTER */
+    footer div div {
+        flex-direction: column !important;
+        gap: 2rem;
+    }
+}

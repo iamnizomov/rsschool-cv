@@ -28,6 +28,56 @@ header ul li:hover a {
     color: var(--main);
 }
 
+header .menu-bar {
+    display: none;
+}
+
+header .menu-bar {
+    position: relative;
+    height: 16px;
+    cursor: pointer;
+    width: 2rem;
+}
+
+header .menu-bar span {
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 2rem;
+    background-color: #fff;
+    transition: all 250ms ease-in-out;
+}
+
+header .menu-bar span:first-child {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .menu-bar span:nth-child(2) {
+    top: 6px;
+    left: 0;
+    right: 0;
+}
+
+header .menu-bar span:last-child {
+    top: 12px;
+    left: 0;
+    right: 0;
+}
+
+header .menu-bar.active span:first-child {
+    transform: translateY(6px) rotate(45deg);
+}
+
+header .menu-bar.active span:nth-child(2) {
+    opacity: 0;
+}
+
+header .menu-bar.active span:last-child {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
 /* OCCUPATION SECTION */
 section#occupation .occupation-avatar {
     position: relative;
@@ -130,6 +180,10 @@ section#skills h2 {
 
 section#skills h2::before {
     right: 0;
+}
+
+section#skills h2+div {
+    flex-direction: row;
 }
 
 section#skills .skills-container-outer {
